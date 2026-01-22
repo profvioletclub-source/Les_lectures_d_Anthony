@@ -3,8 +3,8 @@
   "short_name": "Les lectures d'Anthony",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2b2b2b",
+  "background_color": "#002366",
+  "theme_color": "#FFD700",
   "icons": [
     {
       "src": "assets/icons/IMG_0190.png",
