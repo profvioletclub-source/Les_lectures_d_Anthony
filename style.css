@@ -50,7 +50,7 @@ a:hover {
 
 blockquote {
   font-style: italic;
-  color: #555;
+  color: var(--color-parme);
   border-left: 3px solid var(--color-accent);
   padding-left: 10px;
   margin: 20px 0;
@@ -64,10 +64,10 @@ blockquote {
 }
 
 .category {
-  border: 2px solid #ccc;
+  border: 2px solid var(--color-gold);
   padding: 15px;
   margin: 20px 0;
-  background-color: #fdf6f0;
+  background-color: var(--color-gold);
 }
 
 .fic-card {
@@ -105,15 +105,15 @@ button {
   padding: 8px 12px;
   margin: 5px;
   font-size: 1em;
-  background-color: #8b0000;
-  color: white;
+  background-color: var(--color-accent);
+  color: var(--color-gold);
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #a30000;
+  background-color: #001A4D;
 }
 
 .modal-content input {
