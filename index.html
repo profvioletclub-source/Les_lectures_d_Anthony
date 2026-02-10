@@ -16,51 +16,7 @@
     <h1>La liste des lectures</h1>
   </header>
 
- <!-- <button id="sidebar-toggle">☰</button>
-
-  <div id="sidebar">
-    <button id="close-sidebar">✖</button>
-    <h2>Autres accès</h2>
-    <ul>
-      <li><a href="profil.html">Mon Profil</a></li>
-      <li><a href="contact.html">Nous Contacter</a></li>
-    </ul>
-  </div>   -->
-
- <!-- <div id="popup-overlay">
-    <div id="popup-box">
-      <h2>📢 Bienvenue dans la Bibliothèque Ksosiale</h2>
-      <p>Le site est désormais disponible en application ! Si vous êtes déjà dans l'application, vous pouvez ignorer se message. Depuis Chrome par exemple, appuyez sur le bouton installer, depuis Safari, faite comme pour installer un raccourcis sur l'écran.</p>
-      <button id="close-popup">Fermer</button>
-    </div>
-  </div> -->
-  
-<!--  <section id="search-section">
-    <a href="recherche.html" class="search-button">🔍 Accéder à la recherche</a>
-  </section>  -->
-
-<!--  <section id="categories" class="category-group">
-    <div class="category" id="fanfiction-zone">
-      <h2><a href="fanfiction.html">Fan Fictions</a></h2>
-    </div>
-    <div class="category" id="roman-zone">
-      <h2><a href="roman.html">Romans</a></h2>
-    </div>
-    <div class="category" id="docu-zone">
-      <h2><a href="documentaire.html">Documentaires</a></h2>
-    </div>
-    <div class="category" id="serie-zone">
-      <h2><a href="series.html">Séries</a></h2>
-    </div>
-    <div class="category" id="other-zone">
-      <h2><a href="autre.html">Autres</a></h2>
-    </div>
-  </section>
-  <section>
-    <p>Nouveauté : vos textes peuvent être publiés à tout moment ! Contactez-nous !</p>
-  </section>  -->
-
-  <table id="livresTable">
+  <table>
     <thead>
       <tr>
         <th>TITRE</th>
@@ -74,30 +30,32 @@
     </thead>
 
     <tbody>
+      <!-- Exemple de ligne -->
+      <tr>
+        <td>Le Seigneur des Anneaux</td>
+        <td>1</td>
+        <td>La Communauté de l’Anneau</td>
+        <td>J.R.R. Tolkien</td>
+        <td>1954</td>
+        <td>Fantasy</td>
+        <td>★★★★★</td>
+      </tr>
+
+      <!-- Tu ajoutes ici autant de lignes que tu veux -->
+      <!--
+      <tr>
+        <td>TITRE</td>
+        <td>TOME</td>
+        <td>PARTIE</td>
+        <td>AUTEUR</td>
+        <td>DATE</td>
+        <td>SUJET</td>
+        <td>NOTE</td>
+      </tr>
+      -->
     </tbody>
   </table>
 
-  <button onclick="ajouterLigne()">Ajouter un livre</button>
-
-  <script>
-  function ajouterLigne() {
-    const table = document.getElementById("livresTable").querySelector("tbody");
-    const ligne = document.createElement("tr");
-
-    const colonnes = ["titre","tome","partie","auteur","date","sujet","note"];
-
-    colonnes.forEach(col => {
-      const td = document.createElement("td");
-      const input = document.createElement("input");
-      input.type = "text";
-      input.placeholder = col.toUpperCase();
-      td.appendChild(input);
-      ligne.appendChild(td);
-    });
-
-    table.appendChild(ligne);
-  }
-  </script>
   
   <footer>
     <p>&copy; 2026 Rave - Tous droits réservés</p>
